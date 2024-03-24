@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import { InputBox } from "./index.js";
+import { useNavigate } from 'react-router-dom';
 
 function SurveyForm() {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -9,6 +10,7 @@ function SurveyForm() {
     const [sessionId, setSessionId] = useState("");
     const [customerSessionObjectId, setCustomerSessionObjectId] = useState("");
     const [textMessage, setTextMessage] = useState("");
+    const navigate = useNavigate();
 
     const serverUrl = "https://codeinboundassignmentserver.onrender.com";
 
@@ -118,7 +120,7 @@ function SurveyForm() {
             xhrUpdateSessionId.send();
 
             // redirect to the ThankYou page
-            window.location.href = '/thank-you';
+            navigate('/thank-you');
         } 
     }
 
