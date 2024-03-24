@@ -10,6 +10,8 @@ function SurveyForm() {
     const [customerSessionObjectId, setCustomerSessionObjectId] = useState("");
     const [textMessage, setTextMessage] = useState("");
 
+    const serverUrl = "https://codeinboundassignmentserver.onrender.com";
+
     useEffect(() => {
         ( async () => {
             const xhr = new XMLHttpRequest;
@@ -125,7 +127,6 @@ function SurveyForm() {
     }
 
     const question = questionsArray[currentIndex];
-    const serverUrl = "https://codeinboundassignmentserver.onrender.com";
 
     return (
         <div className='h-lvh w-lvw flex justify-center items-center p-5 bg-slate-600'>
