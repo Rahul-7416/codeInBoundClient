@@ -6,9 +6,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='https://surveyformcodeinbound.netlify.app/' element={<WelcomePage/>} ></Route>
-        <Route path='https://surveyformcodeinbound.netlify.app/survey-form' element={<SurveyForm/>} ></Route>
-        <Route path='https://surveyformcodeinbound.netlify.app/thank-you' element={<ThankYou/>} ></Route>
+        <Route path='/' element={<WelcomePage/>} ></Route>
+        <Route path='/survey-form' element={<SurveyForm/>} ></Route>
+        <Route path='/thank-you' element={<ThankYou/>} ></Route>
       </Routes>
     </BrowserRouter>
   )
