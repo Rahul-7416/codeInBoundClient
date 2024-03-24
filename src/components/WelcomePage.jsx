@@ -11,7 +11,7 @@ function WelcomePage() {
             <p className='self-center text-center'>Fill the survey form, and share your valuable feedback to us.</p>
         </div>
         <button className='self-center mb-4 bg-green-400 py-1 px-4 rounded-lg'>
-          <Link to='/survey-form'>
+          <Link to='https://surveyformcodeinbound.netlify.app/survey-form'>
             Begin
           </Link>
         </button>
