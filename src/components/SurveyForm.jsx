@@ -118,7 +118,7 @@ function SurveyForm() {
             xhrUpdateSessionId.send();
 
             // redirect to the ThankYou page
-            window.location.href = '/thank-you';
+            window.location.href = 'https://surveyformcodeinbound.netlify.app/thank-you';
         } 
     }
 
