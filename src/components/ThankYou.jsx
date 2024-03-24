@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 function ThankYou() {
   useEffect(() => {
     const timer = setTimeout(() => {
-      window.location.href = 'https://surveyformcodeinbound.netlify.app/';
+      window.location.href = '/';
     }, 5000);
 
     return () => clearTimeout(timer);
